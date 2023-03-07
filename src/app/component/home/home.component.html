@@ -1,0 +1,114 @@
+<!-- normal method start -->
+<h1>Hai,This is mohan</h1>
+<!-- normal method end -->
+
+<hr>
+
+<!-- Interpolation method start -->
+<h2>Interpolation:</h2>
+<h3>{{interpt}}</h3>
+<!-- Interpolation method end -->
+
+<hr>
+
+<!-- one way class binding start -->
+<h2>One-way class binding:</h2>
+<h4 [class]="cb">Hai,This is one way class binding</h4>
+<!-- one way class binding end -->
+
+<hr>
+
+<!-- one way double class binding start -->
+<h2>two-way class binding:</h2>
+<h4 [ngClass]="cb2">Hai,This is one way double class binding</h4>
+<!-- one way double class binding end -->
+
+<hr>
+
+<!-- style binding type-1 start-->
+<h2>style binding type-1:</h2>
+<h2 [style.color]='"red"'>Hai,This is style binding type-1... </h2>
+<!-- style binding type-1 end-->
+
+<hr>
+
+<!-- style binding type-2 start -->
+<h2>style binding type-2:</h2>
+<h4 [style]="sb">Hai,This is Style binding type-2.....</h4>
+<!-- style binding type-2 end -->
+
+<hr>
+
+<!-- Two way event binding start -->
+<h2>Two way event binding:</h2>
+<button (click)="fun()">event binding</button>
+<h2>{{eb}}</h2>
+<!-- Two way event binding start -->
+
+<hr>
+
+<!-- one way binding interpolation start-->
+<h2>one way binding interpolation:-</h2>
+<h2 [ngClass]="x">This,is one way binding interpolation</h2>
+<h2>{{x|json}}</h2>
+<!-- one way binding interpolation end-->
+
+<hr>
+
+<!-- ngmodel two way data binding start-->
+<h2>ngmodel two way data binding:-</h2>
+&nbsp;&nbsp;&nbsp;<input type="text" [(ngModel)]="y">
+<h1>{{y}}</h1>
+<!-- ngmodel two way data binding end-->
+
+<hr>
+
+<!-- *ng-if method start -->
+<h2>ng if method:-</h2>
+<h2 *ngIf="required then b1;else b2"></h2>
+<ng-template #b1>Hai,This is Mohan b1...</ng-template>
+<ng-template #b2>Hai,This is Mohan b2...</ng-template>
+<!-- *ng-if method end -->
+
+<hr>
+
+<!-- ngswitchcase method start -->
+<h2>ngswitchcase method:-</h2>
+<h2 [ngSwitch]="ngs">
+    <h2 *ngSwitchCase="1">ng switch case 11111....</h2>
+    <h2 *ngSwitchCase="2">ng switch case 22222....</h2>
+    <h2 *ngSwitchCase="3">ng switch case 33333....</h2>
+    <span *ngSwitchCase="7">ng switch case 7777.....</span>
+</h2>
+<!-- ngswitchcase method end -->
+
+<hr>
+
+<!-- ngfor method start -->
+<h2>ngfor in angular :-</h2>
+<div *ngFor="let ys of yx;index as i">
+    <h5>{{ys}}---------{{i+1}}</h5>
+</div>
+<!-- ngfor method end -->
+
+<hr>
+
+<!-- ngfor object method start -->
+<h2>ngfor object in angular :-</h2>
+<div *ngFor="let mk of m|keyvalue">
+    <h5>{{mk.key}}-------{{mk.value}}</h5>
+</div>
+<!-- ngfor object method end -->
+
+<hr>
+
+<!-- nested ngfor object in angular start -->
+<h2>Nested ngfor object:-</h2>
+<div *ngFor="let ms of s">
+    <div *ngFor="let mh of ms|keyvalue">
+        <h5>{{mh.key}}---------{{mh.value}}</h5>
+    </div>
+</div>
+<!-- nested ngfor object in angular end -->
+
+

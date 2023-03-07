@@ -1,0 +1,44 @@
+ /* normal method start */
+h1{
+    text-align: center;
+    color:blue;
+    background-color: chocolate;
+}
+/* normal method end */
+
+/* Interpolation method start */
+h3{
+    background-color: aqua;
+    text-align: center;
+    font-size: 30px;
+    font-family: elephant;
+}
+/* Interpolation method end */
+
+/* one way class binding start */
+.cbcss{
+    text-align: center;
+    font-size: 30px;
+    color:white;
+    background-color: blue;
+}
+/* one way class binding end */
+
+/* one way double class binding start */
+.cbcss1{
+    text-align: center;
+    background-color: rgb(48, 201, 227);
+}
+.cbcss2{
+    color:rgb(19, 46, 70)
+}
+/* one way double class binding end */
+
+/* one way binding interpolation start */
+.mohan{
+    text-align: center;
+    background-color: black;
+}
+.krishna{
+    color:aliceblue
+}
